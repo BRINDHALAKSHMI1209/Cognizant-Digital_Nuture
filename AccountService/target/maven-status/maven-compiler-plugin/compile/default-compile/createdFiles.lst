@@ -1,0 +1,3 @@
+com\cognizant\accountservice\AccountServiceApplication.class
+com\cognizant\accountservice\controller\AccountController.class
+com\cognizant\accountservice\model\Account.class
