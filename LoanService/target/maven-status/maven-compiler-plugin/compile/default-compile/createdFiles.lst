@@ -1,0 +1,3 @@
+com\cognizant\loanservice\controller\LoanController.class
+com\cognizant\loanservice\model\Loan.class
+com\cognizant\loanservice\LoanServiceApplication.class
