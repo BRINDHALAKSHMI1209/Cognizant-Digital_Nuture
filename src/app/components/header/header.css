@@ -1,0 +1,28 @@
+.navbar {
+    background: linear-gradient(90deg, #4facfe, #6a11cb);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.navbar h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: yellow;
+    transform: scale(1.1);
+}
