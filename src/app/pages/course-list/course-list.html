@@ -1,0 +1,21 @@
+<p>isLoading = {{ isLoading }}</p>
+
+<button (click)="isLoading = false">Force Show Courses</button>
+
+<p *ngIf="isLoading">
+  Loading courses...
+</p>
+
+<div *ngIf="!isLoading">
+  <h2>Courses Loaded Successfully! 🎉</h2>
+
+  <app-course-card
+    *ngFor="let course of courses"
+    [course]="course"
+    (enrollRequested)="onEnroll($event)">
+  </app-course-card>
+
+  <p *ngIf="selectedCourseId">
+    Selected Course ID: {{ selectedCourseId }}
+  </p>
+</div>  

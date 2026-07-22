@@ -1,0 +1,56 @@
+.card{
+    width:260px;
+    padding:20px;
+    margin:20px;
+    border-radius:12px;
+    background:white;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.card--enrolled{
+    background:#e8f5e9;
+}
+
+.card--full{
+    border:2px solid orange;
+}
+
+.expanded{
+    transform:scale(1.03);
+}
+
+button{
+    margin:5px;
+    padding:8px 15px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    background:#1976d2;
+    color:white;
+}
+
+button:hover{
+    background:#125ea8;
+}
+
+.passed{
+    background:green;
+    color:white;
+    padding:5px 10px;
+    border-radius:5px;
+}
+
+.failed{
+    background:red;
+    color:white;
+    padding:5px 10px;
+    border-radius:5px;
+}
+
+.pending{
+    background:gray;
+    color:white;
+    padding:5px 10px;
+    border-radius:5px;
+}
