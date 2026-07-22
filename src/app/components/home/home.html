@@ -1,28 +1,39 @@
 <div class="container">
 
-<h1>🎓 Welcome to Student Course Portal</h1>
+    <h1>{{ portalName }}</h1>
 
-<p>
-Learn new technologies and track your learning journey.
-</p>
+    <p>Learn Angular Data Binding.</p>
 
-<div class="stats">
+    <hr>
 
-<div class="card">
-<h2>📚 12</h2>
-<p>Courses Available</p>
-</div>
+    <h2>Property Binding</h2>
 
-<div class="card">
-<h2>👨‍🎓 3</h2>
-<p>Enrolled</p>
-</div>
+    <button [disabled]="isPortalActive">
+        Enroll Now
+    </button>
 
-<div class="card">
-<h2>⭐ 3.8</h2>
-<p>Current GPA</p>
-</div>
+    <hr>
 
-</div>
+    <h2>Event Binding</h2>
+
+    <button (click)="onEnrollClick()">
+        Click Me
+    </button>
+
+    <p>{{ message }}</p>
+
+    <hr>
+
+    <h2>Two-way Binding (ngModel)</h2>
+
+    <input
+        type="text"
+        [(ngModel)]="searchTerm"
+        placeholder="Search Course">
+
+    <p>
+        Searching for:
+        <b>{{ searchTerm }}</b>
+    </p>
 
 </div>

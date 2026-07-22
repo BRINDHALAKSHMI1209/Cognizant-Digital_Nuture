@@ -1,25 +1,29 @@
-<div class="container">
+<h1>Available Courses</h1>
 
-<h1>📚 Available Courses</h1>
+<div class="cards">
 
-<div class="stats">
+@for(course of courses; track course.id){
 
-<div class="card">
-<h2>Angular</h2>
-</div>
+    <app-course-card
 
-<div class="card">
-<h2>Java</h2>
-</div>
+        [course]="course"
 
-<div class="card">
-<h2>Spring Boot</h2>
-</div>
+        (enrollRequested)="onEnroll($event)">
 
-<div class="card">
-<h2>Python</h2>
-</div>
+    </app-course-card>
+
+}
 
 </div>
 
-</div>
+@if(selectedCourseId){
+
+<p>
+
+<b>Selected Course ID:</b>
+
+{{selectedCourseId}}
+
+</p>
+
+}
